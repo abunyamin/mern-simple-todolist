@@ -1,0 +1,76 @@
+### SIGNUP
+POST http://localhost:8800/api/auth/signup HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "abun2",
+  "email": "abun2@mail.com",
+  "password": "abun123"
+}
+
+### SIGNIN
+POST http://localhost:8800/api/auth/signin HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "abun@mail.com",
+  "password": "abun123"
+}
+
+### SIGNOUT
+GET http://localhost:8800/api/auth/signout HTTP/1.1
+
+
+### GET DATA USER
+GET http://localhost:8800/api/user HTTP/1.1
+
+### GET DATA USER BY ID
+GET http://localhost:8800/api/user HTTP/1.1
+
+### EDIT USER BY ID
+PUT http://localhost:8800/api/user/6460806ae3d57e5f6b60fe95 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "abun6",
+  "email": "abun6@mail.com",
+  "password": "abun123"
+}
+
+### DELETE USER
+DELETE http://localhost:8800/api/user/6461a6bcfb8d7c066673480b HTTP/1.1
+
+### ADD TASK
+POST http://localhost:8800/api/task HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Koding3",
+  "desc": "Belajar Koding2",
+  "dueDate": "2023-05-12T23:59:59",
+  "category": "belajar",
+  "priority": true,
+  "completed": false
+}
+
+### GET DATA TASK
+GET http://localhost:8800/api/task HTTP/1.1
+
+### GET DATA TASK BY ID
+GET http://localhost:8800/api/task/ HTTP/1.1
+
+### EDIT TASK BY ID
+PUT http://localhost:8800/api/task/6460aa2a0d91684f03dab6b2 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Belajar bahasa bahasa indonesia2",
+  "desc": "Belajar bahasa inggris pada bagian tenses",
+  "dueDate": "2023-05-12T23:59:59",
+  "category": "belajar",
+  "priority": true,
+  "completed": false
+}
+
+### DELETE TASK
+DELETE http://localhost:8800/api/task/6461a4bf6f2ef80a8a23566c HTTP/1.1
